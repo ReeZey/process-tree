@@ -4,3 +4,10 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+tokio = { version = "1.40", features = ["rt-multi-thread", "net", "io-util", "macros", "fs", "process", "time"] }
+reqwest = { version = "0.12" }
+toml = { version = "0.8"}
+serde = { version = "1.0", features = ["derive"] }
+serde_json = { version = "1.0" }
+tokio-util = { version = "0.7", features = ["codec"] }
+tokio-stream = "0.1"
